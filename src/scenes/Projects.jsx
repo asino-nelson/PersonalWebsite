@@ -86,7 +86,7 @@ const Projects = () => {
             subtitle="This is a recipe mobile application"
           />
           <Project
-            title="Vatise Enterprise"
+            title="Vatise Enterprises"
             subtitle="This is an architecture web application"
           />
           <Project
