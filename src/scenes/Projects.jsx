@@ -14,7 +14,7 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, subtitle }) => {
+const Project = ({ title, subtitle, github }) => {
   const overlayStyles = `absolute h-full w-full p-10 opacity-0 hover:opacity-90 transition duration-700 bg-grey
      z-30 flex flex-col justify-center items-center text-center text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
@@ -26,7 +26,7 @@ const Project = ({ title, subtitle }) => {
         <p className="mt-7">{subtitle}</p>
         <a
           className="hover:opacity-80 transition duration-500 pt-10"
-          href="https://github.com/asino-nelson"
+          href={github}
           target="_blank"
           rel="noreferrer"
         >
@@ -45,7 +45,7 @@ const Project = ({ title, subtitle }) => {
 
 const Projects = () => {
   return (
-    <section id="projects" className="pb-48 pt-48 ">
+    <section id="projects" className="py-48 ">
       <motion.div
         className="md:w-2/5 mx-auto text-center"
         initial="hidden"
@@ -75,7 +75,7 @@ const Projects = () => {
       {/**Projects */}
       <div className="flex justify-center">
         <motion.div
-          className="sm:grid sm:grid-cols-3 "
+          className="sm:grid sm:grid-cols-2 md:grid-cols-3 "
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
           variants={container}
@@ -88,6 +88,7 @@ const Projects = () => {
           <Project
             title="Vatise Enterprises"
             subtitle="This is an architecture web application"
+            github={"https://github.com/asino-nelson/Vatise-Enterprises"}
           />
           <Project
             title="Speed Test"

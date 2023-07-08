@@ -82,15 +82,15 @@ const Landing = ({ setSelectedPage }) => {
           >
             Contact me
           </AnchorLink>
-          <AnchorLink
+          <a
             className=" bg-green-500 py-0.5 pr-0.5 rounded-r-sm"
-            onClick={() => setSelectedPage("contactme")}
-            href="#projects"
+            target="_blank"
+            href="/Nelson Asino Resume.pdf"
           >
             <div className="bg-deep-blue hover:text-green-500 transition duratio-500 w-full h-full flex items-center justify-center px-10">
-              My Portfolio
+              View Resume
             </div>
-          </AnchorLink>
+          </a>
         </motion.div>
 
         <motion.div
