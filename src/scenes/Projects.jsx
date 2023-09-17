@@ -1,6 +1,5 @@
 import Divider from "../components/Divider";
 import { motion } from "framer-motion";
-import { FaGithub } from "react-icons/fa";
 
 const container = {
   hidden: {},
@@ -15,7 +14,7 @@ const projectVariant = {
 };
 
 const Project = ({ title, subtitle, github }) => {
-  const overlayStyles = `absolute h-full w-full p-10 opacity-0 hover:opacity-90 transition duration-700 bg-grey
+  const overlayStyles = `absolute h-full w-full md:p-10 p-5 opacity-0 hover:opacity-80 transition duration-700 bg-grey
      z-30 flex flex-col justify-center items-center text-center text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
 
@@ -25,7 +24,7 @@ const Project = ({ title, subtitle, github }) => {
         <p className="text-2xl">{title}</p>
         <p className="mt-7">{subtitle}</p>
         <a
-          className="hover:bg-deep-blue/90 mt-5 rounded-md font-bold hover:border-transparent border-deep-blue/90 border-2 text-green-500 transition duratio-500 text-center md:px-10 px-8 md:py-3 py-2 cursor-pointer"
+          className="hover:bg-deep-blue/90  mt-5 rounded-md font-bold hover:border-transparent border-deep-blue/90 border-2 text-green-500 transition duratio-500 text-center md:px-10 px-8 md:py-3 py-2 cursor-pointer"
           href={github}
           target="_blank"
           rel="noreferrer"

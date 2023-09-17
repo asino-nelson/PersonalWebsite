@@ -47,8 +47,8 @@ const MySkills = () => {
         >
           <div className="relative h-32 ">
             <div className="z-10">
-              <p className="font-semibold text-5xl"><AiOutlineMobile/></p>
-              <p className="text-3xl font-medium mt-3">Mobile development</p>
+              <p className="font-semibold text-5xl text-gray-400"><AiOutlineMobile/></p>
+              <p className="text-3xl font-medium mt-3 text-gray-200">Mobile development</p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-green-500 absolute right-0 top-0 z-[-1]" />
           </div>
@@ -72,10 +72,10 @@ const MySkills = () => {
         >
           <div className="relative h-32 ">
             <div className="z-10">
-              <p className="font-semibold text-5xl"><CgBrowser/></p>
-              <p className="font-medium text-3xl mt-3">Front-end development</p>
+              <p className="font-semibold text-5xl text-gray-400"><CgBrowser /></p>
+              <p className="font-medium text-3xl mt-3 text-gray-200">Web development</p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5 text-gray-300">I have experience in designing appealing Website UIs using
            HTML, CSS, Javascript, React, Svelte Kit, Bootstrap, and Tailwind css.</p>
@@ -94,10 +94,10 @@ const MySkills = () => {
         >
           <div className="relative h-32 ">
             <div className="z-10">
-              <p className="font-semibold text-5xl"><BiServer /></p>
-              <p className="font-medium text-3xl mt-3">Backend development</p>
+              <p className="font-semibold text-5xl text-gray-400"><BiServer /></p>
+              <p className="font-medium text-3xl mt-3 text-gray-200">Backend development</p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-orange-700 absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5 text-gray-300">
             I create server-side applications using Kotlin and Java-SpringBoot,
