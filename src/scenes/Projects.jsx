@@ -25,12 +25,12 @@ const Project = ({ title, subtitle, github }) => {
         <p className="text-2xl">{title}</p>
         <p className="mt-7">{subtitle}</p>
         <a
-          className="hover:opacity-80 transition duration-500 pt-10"
+          className="hover:bg-deep-blue/90 mt-5 rounded-md font-bold hover:border-transparent border-deep-blue/90 border-2 text-green-500 transition duratio-500 text-center md:px-10 px-8 md:py-3 py-2 cursor-pointer"
           href={github}
           target="_blank"
           rel="noreferrer"
         >
-          <FaGithub size={24}/>
+          VIEW DETAILS
         </a>
       </div>
 
@@ -83,21 +83,24 @@ const Projects = () => {
           {/**Row 1 */}
           <Project
             title="La Plato"
-            subtitle="This is a recipe mobile application"
+            subtitle="This is a recipe mobile application that showcases different meals and their recipes from a remote API."
+            github={"https://github.com/asino-nelson/La-Plato"}
           />
           <Project
-            title="Vatise Enterprises"
-            subtitle="This is an architecture web application"
-            github={"https://github.com/asino-nelson/Vatise-Enterprises"}
+            title="Vatise Enterprise"
+            subtitle="This is a construction company web application aimed at directly linking customers to the engineers"
+            github={"https://vatiseenterprise.co.ke"}
           />
           <Project
             title="Speed Test"
             subtitle="This is a mobile application purpose to test wifi speed"
+            github={"https://github.com/asino-nelson/Speedometer"}
           />
           {/**Row 2 */}
           <Project
-            title="Air bnb"
-            subtitle="This is a clone of the famous airbnb web application"
+            title="Kuku Sama"
+            subtitle="This is a web application for a local restaurant"
+            github={"https://github.com/asino-nelson/Kuku-Sama"}
           />
           <Project
             title="Notes App"
