@@ -93,7 +93,7 @@ const Projects = () => {
           />
           <Project
             title="Farm Connect"
-            subtitle="A mobile application that enables one to create, edit and save notes"
+            subtitle="A web application that bridges the gap between farmers and buyers, fostering direct connections and eliminating exploitative middlemen."
             github={"https://connectfarm.netlify.app"}
           />
          
