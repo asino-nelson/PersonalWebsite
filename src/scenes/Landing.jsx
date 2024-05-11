@@ -85,7 +85,7 @@ const Landing = ({ setSelectedPage }) => {
           <a
             className=" bg-green-500 py-0.5 pr-0.5 rounded-r-sm"
             target="_blank"
-            href="/Nelson Asino Resume.pdf"
+            href="/Nelson Asino.pdf"
           >
             <div className="bg-deep-blue hover:text-green-500 transition duratio-500 w-full h-full flex items-center justify-center px-10">
               View Resume

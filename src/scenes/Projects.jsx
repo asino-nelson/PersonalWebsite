@@ -29,7 +29,7 @@ const Project = ({ title, subtitle, github }) => {
           target="_blank"
           rel="noreferrer"
         >
-          VIEW DETAILS
+          VIEW
         </a>
       </div>
 
