@@ -56,7 +56,7 @@ const Landing = ({ setSelectedPage }) => {
           </p>
           <p className="mt-3  text-2xl text-green-500 ">Android Developer</p>
           <p className="mt-5  text-base mb-7 ">
-            I ama a software developer passionate about android and frontend web
+            I am a software developer passionate about android and frontend web
             development always transforming ideas and designs into concrete real world
             solutions.
           </p>

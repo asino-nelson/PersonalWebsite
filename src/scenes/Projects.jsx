@@ -80,30 +80,33 @@ const Projects = () => {
           variants={container}
         >
           {/**Row 1 */}
-          <Project
-            title="La Plato"
-            subtitle="This is a recipe mobile application that showcases different meals and their recipes from a remote API."
-            github={"https://github.com/asino-nelson/La-Plato"}
-          />
+          
           <Project
             title="Vatise Enterprise"
             subtitle="This is a construction company web application aimed at directly linking customers to the engineers"
             github={"https://vatiseenterprise.co.ke"}
           />
           <Project
+            title="Kuku Sama"
+            subtitle="This is a web application for a local restaurant"
+            github={"https://kukusama.netlify.app"}
+          />
+          <Project
+            title="Farm Connect"
+            subtitle="A mobile application that enables one to create, edit and save notes"
+            github={"https://connectfarm.netlify.app"}
+          />
+         
+          {/**Row 2 */}
+          <Project
+            title="La Plato"
+            subtitle="This is a recipe mobile application that showcases different meals and their recipes from a remote API."
+            github={"https://github.com/asino-nelson/La-Plato"}
+          />
+           <Project
             title="Speed Test"
             subtitle="This is a mobile application purpose to test wifi speed"
             github={"https://github.com/asino-nelson/Speedometer"}
-          />
-          {/**Row 2 */}
-          <Project
-            title="Kuku Sama"
-            subtitle="This is a web application for a local restaurant"
-            github={"https://github.com/asino-nelson/Kuku-Sama"}
-          />
-          <Project
-            title="Notes App"
-            subtitle="A mobile application that enables one to create, edit and save notes"
           />
           <Project
             title="Netflix clone"

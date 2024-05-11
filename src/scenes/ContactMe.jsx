@@ -71,7 +71,7 @@ const ContactMe = () => {
                 <p className="mx-4">Nairobi, Kenya</p>
               </div>
             </div>
-            <div className="mt-7">
+            <div className="mt-7 text-white">
               <SocialMediaIcons />
             </div>
           </div>
