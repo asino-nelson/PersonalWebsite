@@ -22,7 +22,7 @@ const Project = ({ title, subtitle, github }) => {
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
         <p className="text-2xl">{title}</p>
-        <p className="mt-7">{subtitle}</p>
+        <p className="mt-7 hidden md:visible">{subtitle}</p>
         <a
           className="hover:bg-deep-blue/90  mt-5 rounded-md font-bold hover:border-transparent border-deep-blue/90 border-2 text-green-500 transition duratio-500 text-center md:px-10 px-8 md:py-3 py-2 cursor-pointer"
           href={github}

@@ -77,7 +77,7 @@ const Testimonials = () => {
             />
             <p className="uppercase text-opacity-10 mt-2">Veronica Ndemo</p>
             <p className="mt-1 text-sm text-slate-500">
-              Web developer - Afrikanest
+              Frontend Developer - Twiga Foods
             </p>
             <p className="mt-1 text-gray-300">
               He is a talented software developer with the ability to bring ideas and designs
@@ -105,7 +105,7 @@ const Testimonials = () => {
             />
             <p className="uppercase text-opacity-10 mt-2">Claudius Mango</p>
             <p className="mt-1 text-sm text-slate-500">
-              Android developer - Moja
+              Software Developer
             </p>
             <p className="mt-1 text-gray-300 ">
               Nelson is a creative developer with a fast-learning ability and a core contributer in a team
