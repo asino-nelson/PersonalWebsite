@@ -84,7 +84,7 @@ const Projects = () => {
           <Project
             title="Vatise Enterprise"
             subtitle="This is a construction company web application aimed at directly linking customers to the engineers"
-            github={"https://vatiseenterprise.co.ke"}
+            github={"https://vatiseenterprises.netlify.app"}
           />
           <Project
             title="Kuku Sama"
@@ -107,19 +107,6 @@ const Projects = () => {
             title="Speed Test"
             subtitle="This is a mobile application purpose to test wifi speed"
             github={"https://github.com/asino-nelson/Speedometer"}
-          />
-          <Project
-            title="Netflix clone"
-            subtitle="This is a clone of the Netflix application"
-          />
-          {/**Row 3 */}
-          <Project
-            title="Deliveroo Clone"
-            subtitle="This is a react-native deliveroo clone mobile app"
-          />
-          <Project
-            title="Movie App"
-            subtitle="This is a movie website displaying latest movies"
           />
         </motion.div>
       </div>
