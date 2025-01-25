@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const container = {
   hidden: {},
   visible: {
-    transition: { staggerChildren: 0.2 }
+    transition: { staggerChildren: 0.2 },
   },
 };
 
@@ -80,11 +80,16 @@ const Projects = () => {
           variants={container}
         >
           {/**Row 1 */}
-          
+
           <Project
             title="Vatise Enterprise"
             subtitle="This is a construction company web application aimed at directly linking customers to the engineers"
             github={"https://vatiseenterprises.netlify.app"}
+          />
+          <Project
+            title="Startup Hub"
+            subtitle="A web application that bridges the gap between startup founders and potential enterprenuers."
+            github={"https://startup-hub-io.vercel.app"}
           />
           <Project
             title="Kuku Sama"
@@ -96,14 +101,14 @@ const Projects = () => {
             subtitle="A web application that bridges the gap between farmers and buyers, fostering direct connections and eliminating exploitative middlemen."
             github={"https://connectfarm.netlify.app"}
           />
-         
+
           {/**Row 2 */}
           <Project
             title="La Plato"
             subtitle="This is a recipe mobile application that showcases different meals and their recipes from a remote API."
             github={"https://github.com/asino-nelson/La-Plato"}
           />
-           <Project
+          <Project
             title="Speed Test"
             subtitle="This is a mobile application purpose to test wifi speed"
             github={"https://github.com/asino-nelson/Speedometer"}
