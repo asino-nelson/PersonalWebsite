@@ -14,7 +14,7 @@ const projectVariant = {
 };
 
 const Project = ({ title, subtitle, github }) => {
-  const overlayStyles = `absolute h-full w-full md:p-10 p-5 opacity-0 hover:opacity-80 transition duration-700 bg-grey
+  const overlayStyles = `absolute h-full w-full md:p-10 p-5 opacity-0 hover:opacity-80 transition duration-700 bg-gray-100
      z-30 flex flex-col justify-center items-center text-center text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
 
@@ -22,7 +22,7 @@ const Project = ({ title, subtitle, github }) => {
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
         <p className="text-2xl">{title}</p>
-        <p className="mt-7 hidden md:visible">{subtitle}</p>
+        <p className="mt-7 font-semibold">{subtitle}</p>
         <a
           className="hover:bg-deep-blue/90  mt-5 rounded-md font-bold hover:border-transparent border-deep-blue/90 border-2 text-green-500 transition duratio-500 text-center md:px-10 px-8 md:py-3 py-2 cursor-pointer"
           href={github}
@@ -81,6 +81,16 @@ const Projects = () => {
         >
           {/**Row 1 */}
 
+          <Project
+            title="Scratcho App"
+            subtitle="This is a mobile application aimed at connecting kenyan basketball fans, teams and players"
+            github={"https://scracho-africa.vercel.app/"}
+          />
+          <Project
+            title="Super Wallet"
+            subtitle="This is a banking mobile app UI for online banking services"
+            github={""}
+          />
           <Project
             title="Vatise Enterprise"
             subtitle="This is a construction company web application aimed at directly linking customers to the engineers"
