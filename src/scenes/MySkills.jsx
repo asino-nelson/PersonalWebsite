@@ -44,23 +44,20 @@ const MySkills = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-32 ">
-            <div className="z-10">
-              <p className="font-semibold text-5xl text-gray-400">
-                <AiOutlineMobile />
-              </p>
-              <p className="text-3xl font-medium mt-3 text-gray-200">
-                Mobile development
-              </p>
-            </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-green-500 absolute right-0 top-0 z-[-1]" />
+          <div className="flex gap-x-4 items-center">
+            <p className="font-semibold text-5xl text-gray-400">
+              <AiOutlineMobile />
+            </p>
+            <p className="text-3xl font-medium text-gray-200">
+              Mobile development
+            </p>
           </div>
           <p className="mt-5 text-gray-300">
-            I design and build user-friendly Mobile applications using Kotlin
-            and Jetpack libraries such as Dagger-Hilt, Retrofit (REST), Room
-            Database, and Kotlin Coroutines. Additionally, I develop cross-platform mobile applications using
-            React Native Expo, enabling seamless experiences across both Android and
-            iOS platforms.
+            I build high-quality mobile applications using Kotlin and modern
+            Jetpack libraries such as Dagger-Hilt, Retrofit, Room, and Kotlin
+            Coroutines. I also develop cross-platform apps using React Native
+            (Expo), delivering smooth, consistent experiences across Android and
+            iOS.
           </p>
         </motion.div>
 
@@ -75,22 +72,19 @@ const MySkills = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-32 ">
-            <div className="z-10">
-              <p className="font-semibold text-5xl text-gray-400">
-                <CgBrowser />
-              </p>
-              <p className="font-medium text-3xl mt-3 text-gray-200">
-                Web development
-              </p>
-            </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
+          <div className="flex gap-x-4 items-center">
+            <p className="font-semibold text-5xl text-gray-400">
+              <CgBrowser />
+            </p>
+            <p className="font-medium text-3xl text-gray-200">
+              Web development
+            </p>
           </div>
           <p className="mt-5 text-gray-300">
-            I have experience in designing appealing website UIs using
-            JavaScript, TypeScript, React, Next.js, Svelte Kit, and Tailwind
-            CSS, creating modern and responsive web applications with a focus on
-            performance and user experience
+            I create modern, responsive, and performance-focused web
+            applications using JavaScript, TypeScript, React, Next.js,
+            SvelteKit, and Tailwind CSS. My focus is clean UI/UX, scalability,
+            and pixel-perfect interfaces.
           </p>
         </motion.div>
         {/**EXPERIENCE */}
@@ -105,21 +99,19 @@ const MySkills = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-32 ">
-            <div className="z-10">
-              <p className="font-semibold text-5xl text-gray-400">
-                <BiServer />
-              </p>
-              <p className="font-medium text-3xl mt-3 text-gray-200">
-                Backend development
-              </p>
-            </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-orange-700 absolute right-0 top-0 z-[-1]" />
+          <div className="flex gap-x-4 items-center">
+            <p className="font-semibold text-5xl text-gray-400">
+              <BiServer />
+            </p>
+            <p className="font-medium text-3xl text-gray-200">
+              Backend development
+            </p>
           </div>
+
           <p className="mt-5 text-gray-300">
-            I create server-side applications using Python and Django,
-            incorporating REST web services by building robust and scalable
-            APIs.
+            I build scalable backend systems using Python and Django, applying
+            REST architecture to deliver secure, reliable, and high-performance
+            APIs for web and mobile applications.
           </p>
         </motion.div>
       </div>
