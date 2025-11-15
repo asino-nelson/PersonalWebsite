@@ -1,132 +1,91 @@
-import Divider from "../components/Divider";
+"use client";
+
+import { useState } from "react";
 import { motion } from "framer-motion";
+import Divider from "../components/Divider";
 
-const container = {
-  hidden: {},
-  visible: {
-    transition: { staggerChildren: 0.2 },
+const projects = [
+  {
+    title: "Scratcho App",
+    subtitle:
+      "A mobile application connecting Kenyan basketball fans, teams, and players with community features.",
+    img: "/image/scratcho-app.jpg",
+    link: "https://scracho-africa.vercel.app/",
+    stack: ["React Native", "Expo", "Django"],
   },
-};
+  {
+    title: "Nat-Mobile UI",
+    subtitle:
+      "National Bank mobile UI improvement showcasing digital banking, transfers, and transaction history.",
+    img: "/image/super-wallet.jpg",
+    link: "",
+    stack: ["React Native", "Mobile UI"],
+  },
+  {
+    title: "Vatise Enterprise",
+    subtitle:
+      "A construction company platform linking customers directly to engineers.",
+    img: "/image/vatise-enterprise.jpg",
+    link: "https://vatiseenterprises.netlify.app",
+    stack: ["React", "Tailwind"],
+  },
+  {
+    title: "Startup Hub",
+    subtitle:
+      "A platform connecting startup founders to entrepreneurs and innovators.",
+    img: "/image/startup-hub.jpg",
+    link: "https://startup-hub-io.vercel.app",
+    stack: ["React", "Sanity.io", "Tailwind"],
+  },
+];
 
-const projectVariant = {
-  hidden: { opacity: 0, scale: 0.8 },
-  visible: { opacity: 1, scale: 1 },
-};
-
-const Project = ({ title, subtitle, github }) => {
-  const overlayStyles = `absolute h-full w-full md:p-10 p-5 opacity-0 hover:opacity-80 transition duration-700 bg-gray-100
-     z-30 flex flex-col justify-center items-center text-center text-deep-blue`;
-  const projectTitle = title.split(" ").join("-").toLowerCase();
-
+const ProjectCard = ({ project }) => {
   return (
-    <motion.div variants={projectVariant} className="relative">
-      <div className={overlayStyles}>
-        <p className="text-2xl">{title}</p>
-        <p className="mt-7 font-semibold">{subtitle}</p>
-        <a
-          className="hover:bg-deep-blue/90  mt-5 rounded-md font-bold hover:border-transparent border-deep-blue/90 border-2 text-green-500 transition duratio-500 text-center md:px-10 px-8 md:py-3 py-2 cursor-pointer"
-          href={github}
-          target="_blank"
-          rel="noreferrer"
-        >
-          VIEW
-        </a>
-      </div>
+    <motion.div
+      whileHover={{ scale: 1.03 }}
+      className="cursor-pointer bg-white/10 shadow-md rounded-sm overflow-hidden hover:shadow-xl transition"
+    >
+      <img src={project.img} className="h-48 w-full object-cover" />
 
-      <img
-        className="h-full w-full p-1"
-        src={`/image/${projectTitle}.jpg`}
-        alt={projectTitle}
-      />
+      <div className="p-4">
+        <h3 className="text-lg font-bold">{project.title}</h3>
+        <p className="text-slate-400 text-sm mt-1">{project.subtitle}</p>
+
+        <button className="mt-4 text-sm">
+          <a
+            href={project.link}
+            className="bg-green-600 px-4 py-2 rounded-sm hover:bg-green-700"
+          >
+            Visit Project
+          </a>
+        </button>
+      </div>
     </motion.div>
   );
 };
 
-const Projects = () => {
+export default function Projects() {
+
   return (
-    <section id="projects" className="py-48 ">
-      <motion.div
-        className="md:w-2/5 mx-auto text-center"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 1 }}
-        variants={{
-          hidden: { opacity: 0, y: 100 },
-          visible: { opacity: 1, y: 0 },
-        }}
-      >
-        <div>
-          <p className="font-semibold text-4xl">
-            <span className="text-green-500">PRO</span>JECTS
-          </p>
-          <div className="flex justify-center mt-3">
-            <Divider width="w-1/3" />
-          </div>
+    <section id="projects" className="py-28">
+      <div className="text-center">
+        <h2 className="text-4xl font-bold">
+          <span className="text-green-500">PRO</span>JECTS
+        </h2>
+        <div className="flex justify-center mt-3">
+          <Divider width="w-1/3" />
         </div>
-
-        <p className="mt-10 mb-10">
-          Here are some of projects i've worked on. Get your project on this
-          awesome list !!
-        </p>
-      </motion.div>
-
-      {/**Projects */}
-      <div className="flex justify-center">
-        <motion.div
-          className="sm:grid sm:grid-cols-2 md:grid-cols-3 "
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          variants={container}
-        >
-          {/**Row 1 */}
-
-          <Project
-            title="Scratcho App"
-            subtitle="This is a mobile application aimed at connecting kenyan basketball fans, teams and players"
-            github={"https://scracho-africa.vercel.app/"}
-          />
-          <Project
-            title="Super Wallet"
-            subtitle="This is a banking mobile app UI for online banking services"
-            github={""}
-          />
-          <Project
-            title="Vatise Enterprise"
-            subtitle="This is a construction company web application aimed at directly linking customers to the engineers"
-            github={"https://vatiseenterprises.netlify.app"}
-          />
-          <Project
-            title="Startup Hub"
-            subtitle="A web application that bridges the gap between startup founders and potential enterprenuers."
-            github={"https://startup-hub-io.vercel.app"}
-          />
-          <Project
-            title="Kuku Sama"
-            subtitle="This is a web application for a local restaurant"
-            github={"https://kukusama.netlify.app"}
-          />
-          <Project
-            title="Farm Connect"
-            subtitle="A web application that bridges the gap between farmers and buyers, fostering direct connections and eliminating exploitative middlemen."
-            github={"https://connectfarm.netlify.app"}
-          />
-
-          {/**Row 2 */}
-          <Project
-            title="La Plato"
-            subtitle="This is a recipe mobile application that showcases different meals and their recipes from a remote API."
-            github={"https://github.com/asino-nelson/La-Plato"}
-          />
-          <Project
-            title="Speed Test"
-            subtitle="This is a mobile application purpose to test wifi speed"
-            github={"https://github.com/asino-nelson/Speedometer"}
-          />
-        </motion.div>
       </div>
+
+      <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        {projects.map((p, index) => (
+          <ProjectCard
+            key={index}
+            project={p}
+          />
+        ))}
+      </div>
+
     </section>
   );
-};
-
-export default Projects;
+}
