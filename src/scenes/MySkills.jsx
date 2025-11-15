@@ -56,12 +56,10 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-green-500 absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5 text-gray-300">
-            I design and build user-friendly Android applications using Kotlin
+            I design and build user-friendly Mobile applications using Kotlin
             and Jetpack libraries such as Dagger-Hilt, Retrofit (REST), Room
-            Database, and Kotlin Coroutines. I stay up-to-date with the latest
-            technologies, including Jetpack Compose for modern UI development.
-            Additionally, I develop cross-platform mobile applications using
-            React Native, enabling seamless experiences across both Android and
+            Database, and Kotlin Coroutines. Additionally, I develop cross-platform mobile applications using
+            React Native Expo, enabling seamless experiences across both Android and
             iOS platforms.
           </p>
         </motion.div>

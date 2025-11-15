@@ -54,7 +54,7 @@ const Landing = ({ setSelectedPage }) => {
               Asino
             </span>
           </p>
-          <p className="mt-3  text-2xl text-green-500 ">Android Developer</p>
+          <p className="mt-3  text-2xl text-green-500 ">Mobile Developer</p>
           <p className="mt-5  text-base mb-7 ">
             I am a software developer passionate about mobile and frontend web
             development always transforming ideas and designs into concrete real world
