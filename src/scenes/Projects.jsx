@@ -48,7 +48,7 @@ const ProjectCard = ({ project }) => {
       <img src={project.img} className="h-48 w-full object-cover" />
 
       <div className="p-4">
-        <h3 className="text-lg font-bold">{project.title}</h3>
+        <h3 className="text-lg font-medium">{project.title}</h3>
         <p className="text-slate-400 text-sm mt-1">{project.subtitle}</p>
 
         <button className="mt-4 text-sm">
