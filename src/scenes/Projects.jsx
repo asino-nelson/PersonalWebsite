@@ -18,7 +18,7 @@ const projects = [
     subtitle:
       "National Bank mobile UI improvement showcasing digital banking, transfers, and transaction history.",
     img: "/image/super-wallet.jpg",
-    link: "",
+    link: "https://github.com/asino-nelson/nbk",
     stack: ["React Native", "Mobile UI"],
   },
   {
@@ -26,7 +26,7 @@ const projects = [
     subtitle:
       "A construction company platform linking customers directly to engineers.",
     img: "/image/vatise-enterprise.jpg",
-    link: "https://vatiseenterprises.netlify.app",
+    link: "https://vatisenel.netlify.app/",
     stack: ["React", "Tailwind"],
   },
   {

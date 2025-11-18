@@ -63,7 +63,7 @@ const Landing = ({ setSelectedPage }) => {
         </motion.div>
 
         {/*CALL TO ACTIONS */}
-        <motion.div
+        {/* <motion.div
           className="flex mt-5"
           initial="hidden"
           whileInView="visible"
@@ -91,7 +91,7 @@ const Landing = ({ setSelectedPage }) => {
               View Resume
             </div>
           </a>
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           className="flex mt-7"

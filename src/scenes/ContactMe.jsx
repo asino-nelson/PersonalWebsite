@@ -58,7 +58,7 @@ const ContactMe = () => {
             <div className="font-medium text-green-200">
               <div className="flex mt-1">
                 <CiPhone />
-                <p className="mx-4">+254 715 729 081</p>
+                <p className="mx-4">+254 796 316 626  </p>
               </div>
 
               <div className="flex mt-5">
