@@ -26,7 +26,7 @@ const projects = [
     subtitle:
       "A film and photography portfolio.",
     img: "/image/glx-studios.png",
-    link: "https://glxstudios.netlify.app/contact",
+    link: "https://glxstudios.netlify.app/",
     stack: ["React", "Tailwind", "Codex AI"],
   },
   {
