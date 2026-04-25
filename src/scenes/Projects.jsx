@@ -22,6 +22,14 @@ const projects = [
     stack: ["React Native", "Mobile UI"],
   },
   {
+    title: "GLX Studios",
+    subtitle:
+      "A film and photography portfolio.",
+    img: "/image/glx-studios.png",
+    link: "https://glxstudios.netlify.app/contact",
+    stack: ["React", "Tailwind", "Codex AI"],
+  },
+  {
     title: "Vatise Enterprise",
     subtitle:
       "A construction company platform linking customers directly to engineers.",
